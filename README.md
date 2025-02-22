@@ -4,12 +4,13 @@
 
 # Commands
 
-- `deno task buildClean` generates a clean _site directory
 - `deno task dev` runs a local server (useful during development)
-- `deno task clean` removes generated _site directory
+- `deno task buildClean` generates a clean _site directory
 - `deno task build` generates _site directory without clearing it
+- `deno task clean` clears generated _site directory
 
 # Deployment
 
-- Push your changes to `src` folder
+- Test your changes with `deno task dev` or `deno task buildClean` 
+- Push your changes (`_site` folder is ignored)
 - Our custom GitHub action will automatically generate and deploy the `_site` folder
