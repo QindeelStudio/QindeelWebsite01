@@ -1,0 +1,12 @@
+{
+    "tasks": {
+        "dev": "deno run --allow-read --allow-write --allow-env --allow-sys --allow-net npm:@11ty/eleventy --serve",
+        "build": "deno run --allow-read --allow-write --allow-env --allow-sys npm:@11ty/eleventy",
+        "clear": "deno eval 'try { Deno.removeSync(\"_site\", { recursive: true }) } catch (e) { console.log(e) }'",
+        "buildClean": "deno task clear && deno task build"
+    },
+    "imports": {
+        "@11ty/eleventy": "npm:@11ty/eleventy@^3.0.0",
+        "@std/assert": "jsr:@std/assert@1"
+    }
+}
