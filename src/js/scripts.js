@@ -41,7 +41,7 @@
 		
 	
 		// EQUALIZER TOGGLE
-			var source = "audio/audio.mp3";
+			/* var source = "audio/audio.mp3";
 			var audio = new Audio(); // use the constructor in JavaScript, just easier that way
 			audio.addEventListener("load", function() {
 			  audio.play();
@@ -63,7 +63,7 @@
 					audio.pause();
 					playing = false;
 				}
-			});
+			}); */
 	
 	
 		// EQUALIZER
@@ -100,9 +100,9 @@
 				$('.equalizer').equalizerAnimation(250, barsHeight);
 	
 		// HAMBURGER AUDIO
-			document.getElementById("hamburger-menu").addEventListener('click', function(e) {
+			/* document.getElementById("hamburger-menu").addEventListener('click', function(e) {
 			document.getElementById("hamburger-hover").play();
-	  	});
+	  	}); */
 		
 		
 	
