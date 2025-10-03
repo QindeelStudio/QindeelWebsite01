@@ -1990,8 +1990,8 @@ s .process span:before {
 .clients ul li img {
   opacity: 1;
   background: #fff;
-  border: 1px solid #eee;
-  padding: 15px;
+  border: 10px solid #eee;
+  padding: 20px;
 }
 .clients ul li small {
   width: 100%;
