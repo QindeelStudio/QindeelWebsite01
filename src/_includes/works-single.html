@@ -6,32 +6,32 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="theme-color" content="#e8293b"/>
 <meta name="HandheldFriendly" content="true" />
-<title>Brabus | Contemporary Modern Portfolio for Agencies</title>
-<meta name="author" content="Themezinho">
-<meta name="description" content="Brabus | Contemporary Modern Portfolio for Agencies">
-<meta name="keywords" content="creative, works, showcase, portfolio, highlight, projects, modern, agency, digital, studio, css, animation, transition, freelancers">
+<title>Qindeel Studio</title>
+<meta name="author" content="QindeelStudio">
+<meta name="description" content="Qindeel Studio">
+<meta name="keywords" content="creative, works, showcase, portfolio, highlight, projects, modern, agency, digital, studio, css, animation, transition, freelancers, unity, games, vr">
 
 <!-- SOCIAL MEDIA META -->
-<meta property="og:description" content="Brabus | Contemporary Modern Portfolio for Agencies">
-<meta property="og:image" content="http://www.themezinho.net/brabus/preview.png">
-<meta property="og:site_name" content="Brabus">
-<meta property="og:title" content="Brabus">
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://www.themezinho.net/brabus">
+<meta property="og:description" content="Qindeel Studio">
+<meta property="og:image" content="https://qindeelstudio.github.io/QindeelWebsite01/images/logo.png">
+<meta property="og:site_name" content="Qindeel Studio">
+<meta property="og:title" content="Qindeel Studio">
+<meta property="og:type" content="Qindeel Studio">
+<!--<meta property="og:url" content="">-->
 
 <!-- TWITTER META -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@brabus">
-<meta name="twitter:creator" content="@brabus">
-<meta name="twitter:title" content="brabus">
-<meta name="twitter:description" content="Brabus | Contemporary Modern Portfolio for Agencies">
-<meta name="twitter:image" content="http://www.themezinho.net/brabus/preview.png">
+<meta name="twitter:site" content="@QindeelStudio">
+<meta name="twitter:creator" content="@QindeelStudio">
+<meta name="twitter:title" content="Qindeel Studio">
+<meta name="twitter:description" content="Qindeel Studio">
+<meta name="twitter:image" content="https://qindeelstudio.github.io/QindeelWebsite01/images/logo.png">
 
 <!-- FAVICON FILES -->
-<link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+<!--<link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
 <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
 <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
-<link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
+<link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">-->
 <link href="ico/favicon.png" rel="shortcut icon">
 
 <!-- CSS FILES -->
@@ -108,19 +108,20 @@
 <!-- end navbar -->
 <header class="page-header">
   <div class="video-bg">
-    <video src="videos/video2.mp4" muted loop autoplay></video>
+    <!-- <video src="videos/video2.mp4" muted loop autoplay></video> -->
   </div>
   <!-- end video-bg -->
   <div class="container">
   	<h1>WORKS</h1>
-  	<p>TO CREATE A POWERFUL PROJECT ONCE, A BIT OF LUCK IS ENOUGH</p>
+  	<p>OUR STUDIO's ADVENTURES</p>
   </div>
   <!-- end container -->
   <aside class="left-side">
     <ul>
-      <li><a href="#">FACEBOOK</a></li>
-      <li><a href="#">BEHANCE</a></li>
-      <li><a href="#">DRIBBBLE</a></li>
+      <li><a href="mailto:qindeelstudio@gmail.com">MAIL</a></li>
+      <li><a href="http://linkedin.com/company/QindeelStudio">Linkedin</a></li>
+       <li><a href="https://twitter.com/QindeelStudio">Twitter</a></li>
+      <li><a href="https://www.youtube.com/@qindeelstudio7640">Youtube</a></li>
     </ul>
   </aside>
   <!-- end left-side -->
@@ -140,7 +141,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 wow fadeIn">
-        <h6>SMOOTH INTERFACE INTERACTION</h6>
+        <!-- <h6>SMOOTH INTERFACE INTERACTION</h6> -->
         <h2>{{ name }}</h2>
       </div>
       <!-- end col-12 -->
@@ -169,40 +170,61 @@
       <!-- end text-desc -->
       </div>
       <!-- end col-7 --> 
+      {% if video %}
       <div class="col-12 wow fadeIn">
       	<iframe src="{{ video }}" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
+      {% endif %}
+      {% if video_2 %}
+      <div class="col-12 wow fadeIn">
+      	<iframe src="{{ video_2 }}" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      {% endif %}
       <!-- end col-12 -->
+      {% if image_1 %}
       <div class="col-12 wow fadeIn">
       	<figure><a href="{{ image_1 }}" data-fancybox><img src="{{ image_1 }}" alt="{{ image_1_alt }}"></a></figure>
       </div>
+      {% endif %}
       <!-- end col-12 -->
+      {% if image_2 %}
       <div class="col-md-6 wow fadeIn">
       	<figure><a href="{{ image_2 }}" data-fancybox><img src="{{ image_2 }}" alt="{{ image_2_alt }}"></a></figure>
       </div>
+      {% endif %}
       <!-- end col-6 -->
+      {% if image_3 %}
       <div class="col-md-6 wow fadeIn">
       	<figure><a href="{{ image_3 }}" data-fancybox><img src="{{ image_3 }}" alt="{{ image_3_alt }}"></a></figure>
       </div>
+      {% endif %}
       <!-- end col-6 -->
+      {% if image_4 %}
       <div class="col-12 wow fadeIn">
       	<figure><a href="{{ image_4 }}" data-fancybox><img src="{{ image_4 }}" alt="{{ image_4_alt }}"></a></figure>
       </div>
+      {% endif %}
       <!-- end col-12 -->
+      {% if image_5 %}
       <div class="col-md-4 wow fadeIn">
       	<figure><a href="{{ image_5 }}" data-fancybox><img src="{{ image_5 }}" alt="{{ image_5_alt }}"></a></figure>
       </div>
+      {% endif %}
       <!-- end col-4 -->
+      {% if image_6 %}
       <div class="col-md-4 wow fadeIn">
       	<figure><a href="{{ image_6 }}" data-fancybox><img src="{{ image_6 }}" alt="{{ image_6_alt }}"></a></figure>
       </div>
+      {% endif %}
       <!-- end col-4 -->
+      {% if image_7 %}
       <div class="col-md-4 wow fadeIn">
       	<figure><a href="{{ image_7 }}" data-fancybox><img src="{{ image_7 }}" alt="{{ image_7_alt }}"></a></figure>
       </div>
+      {% endif %}
       <!-- end col-4 -->
       <div class="col-12 wow fadeIn">
-      	<h3>Thanks for Watching</h3>
+      	<!-- <h3>Thanks for Watching</h3> -->
       </div>
       <!-- end col-12 -->
     </div>
