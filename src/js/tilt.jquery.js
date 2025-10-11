@@ -283,6 +283,9 @@
                 // Store settings
                 $(this).data('settings', this.settings);
 
+                //- Added: Initialize mouse positions
+                // this.mousePositions = getMousePositions.call(this);
+
                 // Prepare element
                 if(this.settings.glare) prepareGlare.call(this);
 
